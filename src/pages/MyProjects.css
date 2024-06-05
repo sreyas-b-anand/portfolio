@@ -1,0 +1,15 @@
+.navbar p{
+    margin: 10px;
+}
+.homepage .error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center; 
+  }
+  
+  .spinner-border {
+    display: inline-block;
+  }
+  
