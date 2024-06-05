@@ -6,33 +6,16 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isLoading , setIsloading] =useState(false);
-  const [messageSent , setMessageSent] =useState(false)
+  /*const [isLoading , setIsloading] =useState(false);
+  const [messageSent , setMessageSent] =useState(false)*/
 
-  const  handleClick = () => {
-    
-    setIsloading(true);
-    const messages = { name, email, message };
-
-    fetch("http://localhost:8001/message", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(messages),
-    })
-    .then(() => {
-        
-        setIsloading(false);
-        setMessageSent(true)
-    })
-    .catch(() => {
-      console.log('failed to sent');
-    })
-  };
+ 
+  
 
   return (
     <>
     <div className="navbar"><Navbar/></div>
-      <form  onSubmit={handleClick}>
+      <form  >
         <div className="contact">
           <label>message me</label>
           <label>
@@ -62,9 +45,7 @@ function Contact() {
          
         </div>
         <div>{name}</div>
-       { !isLoading && <div><button type="submit">send</button></div>}
-       { isLoading && <div><button type="submit">loading</button></div>}
-       { messageSent && <nav>Message succesfully sent</nav>}
+      
       </form>
     </>
   );

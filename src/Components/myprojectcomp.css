@@ -1,0 +1,42 @@
+.all {
+    margin: 20px;
+    display: flex;
+    font-size: small;
+    align-items: center;
+    color: rgb(0, 204, 255);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project1 , .project2{
+    height: 12rem;
+    width: 12rem;
+    contain: content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.project1 header ,.project2 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project1 section {
+    height: 9rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.project2 section{
+    height: 9rem;
+    width: 12rem;
+    display: flex;
+    align-items:center;
+    justify-content:calc(10,2,4);
+    text-align: center;
+    flex-wrap: wrap;
+}
