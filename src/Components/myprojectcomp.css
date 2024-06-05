@@ -3,61 +3,79 @@
     display: flex;
     font-size: small;
     align-items: center;
-    color: rgb(0, 204, 255);
+    color: rgb(0, 0, 0);
     gap: 30px;
     flex-wrap: wrap;
+
 }
-.project1 , .project2{
-    height: 12rem;
-    width: 12rem;
+
+.project1,
+.project2 {
+    height: 15rem;
+    width: 14rem;
     contain: content;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: #8576FF !important;
+    border-radius: 10px;
+    border:none;
+   
+}
+
+.project1 header,
+.project2 header {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.project1 header ,.project2 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 .project1 section {
     height: 9rem;
-    width: 12rem;
+    width: 14rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    padding: 10px;
 }
-.project2 section{
+
+.project2 section {
     height: 9rem;
-    width: 12rem;
+    width: 14rem;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    padding: 10px;
 }
-.project1 footer , .project2 footer{
+
+.project1 footer,
+.project2 footer {
     text-decoration: none;
-    width: 12rem;
+    width: 14rem;
     height: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     gap: 30px;
-    
+    padding-bottom: 30px;
+
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: black;
 
 }
-footer a{
+
+footer a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,8 +84,14 @@ footer a{
     border-radius: 5px;
     background-color: white;
 }
+
 footer a:hover {
     background-color: black;
     color: aliceblue;
-    
+
+}
+
+.color {
+
+    color: aquamarine;
 }
