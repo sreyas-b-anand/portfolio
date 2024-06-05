@@ -1,5 +1,6 @@
 .page{
-    
+    display : flex;
+    flex-wrap:wrap;
     background-color: rgb(0, 0, 56);
 }
 
@@ -21,9 +22,15 @@
 }
 
 .social .intro .name:hover > .photo{
-    transform: translateX(100vw) rotate(360deg);
+    transform: translateX(50vw) rotate(360deg);
     transition: transform 3s ease-in-out;    
 }
+.social .intro .name:hover::after .page:hover > .homepage .photo{
+    transform: translateX(50vw) rotate(360deg);
+    transition: transform 3s ease-in-out;    
+}
+ 
+
 .homepage .social{
     margin-top: 6rem;
     font-size: large;

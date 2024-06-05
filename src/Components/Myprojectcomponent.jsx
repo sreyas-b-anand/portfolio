@@ -11,8 +11,10 @@ function Myprojectcomp(props) {
           <div key={calculator.id}>
             <header>{calculator.header}</header>
             <section>{calculator.desc}</section>
-            <a href={calculator.gitlink}>GIT</a>
-            <a href={calculator.weblink}>WEB</a>
+            <footer>
+              <a href={calculator.gitlink}>GIT</a>{" "}
+              <a href={calculator.weblink}>WEB</a>
+            </footer>
           </div>
         </div>
 
@@ -20,8 +22,10 @@ function Myprojectcomp(props) {
           <div key={tictactoe.id}>
             <header>{tictactoe.header}</header>
             <section>{tictactoe.desc}</section>
-            <a href={tictactoe.gitlink}>GIT</a>
-            <a href={tictactoe.weblink}>WEB</a>
+            <footer>
+              <a href={tictactoe.gitlink}>GIT</a>
+              <a href={tictactoe.weblink}>WEB</a>
+            </footer>
           </div>
         </div>
       </div>
