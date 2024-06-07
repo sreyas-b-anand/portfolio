@@ -1,0 +1,50 @@
+.contactpage .contact{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px ;
+    padding-top: 20px;
+}
+.contactpage .c{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contactpage .nameIn , .mailIn , textarea{
+    width: calc(70vw - 40px);
+    border: none;
+    background-color: rgb(197, 203, 203);
+    border-radius: 10px;
+}
+textarea{
+    height: 20vh;
+}
+.contact .btn{
+    border: none;
+    border-radius:10px ;
+    height: 40px;
+    font-weight: bold;
+    color: rgb(7, 5, 5);
+    background-color: #DA3FC1;
+}
+.contact .btn:hover{
+    box-shadow: 1px  1px 7px 5px #DA3FC1;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.contact .message{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #DA3FC1;
+}

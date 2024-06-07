@@ -2,6 +2,22 @@ import Navbar from "../Components/Navbar";
 import "./Home.css";
 
 function Home() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const span = document.querySelector(".span");
+
+    function setRandomDirection() {
+      let randomX = Math.random() * window.innerWidth + "px";
+      let randomY = Math.random() * window.innerHeight + "px";
+      console.log(randomX, randomY);
+
+      span.style.setProperty("--random-x", randomX);
+      span.style.setProperty("--random-y", randomY);
+    }
+
+    setRandomDirection();
+    span.addEventListener("animationiteration", setRandomDirection);
+  });
+
   return (
     <>
       <div className="page">
@@ -15,17 +31,24 @@ function Home() {
               Hi,My name is{" "}
               <p className="name">
                 SREYAS B ANAND{" "}
-                <img
-                  alt="image"
-                  src="https://avatars.mds.yandex.net/i?id=b507a2b8d9382967a186c654f1eeaa74-5262078-images-taas-consumers&n=27&h=480&w=480"
-                  className="photo"
-                />
+                <div className="photodiv">
+                  <img
+                    alt="image"
+                    src="https://avatars.mds.yandex.net/i?id=b507a2b8d9382967a186c654f1eeaa74-5262078-images-taas-consumers&n=27&h=480&w=480"
+                    className="photo1"
+                  />
+                   <img
+                    alt="image"
+                    src="https://avatars.mds.yandex.net/i?id=b507a2b8d9382967a186c654f1eeaa74-5262078-images-taas-consumers&n=27&h=480&w=480"
+                    className="photo2"
+                  />
+                </div>
               </p>
             </div>
 
             <br />
             <section className="welcome">
-              WELCOME TO MY PORTFOLIO WEBSITE
+              WELCOME TO MY PORTFOLIO <p className="website">WEBSITE</p>
             </section>
             <div className="image">
               <a href="https://github.com/SREYAS1045">
@@ -40,6 +63,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <span className="span"></span>
       </div>
     </>
   );

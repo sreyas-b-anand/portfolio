@@ -1,5 +1,8 @@
 html, body #root{
-    background-color: #1C1678;
+    --bgclr:#07091E;
+    background-color: var(--bgclr);
+    color: aliceblue;
     
     
 }
+

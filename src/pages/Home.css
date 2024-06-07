@@ -1,90 +1,174 @@
-.page{
-    display : flex;
-    flex-wrap:wrap;
-    background-color: rgb(0, 0, 56);
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bgclr);
+  color: var(--tertiary);
+  z-index: -7;
+}
+.homepage {
+  z-index: 1;
 }
 
-    
-.homepage .name{
-    font-size:35px;
-    font-weight: 500;
-    font-style: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    transition: all 2s ease-in;
-    
-}
-.homepage .name:hover{
-    -webkit-text-stroke: 1px;
-    cursor: pointer;
-    -webkit-text-stroke-color: skyblue;
-    stroke-width: 1px;
+.homepage .name {
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  transition: all 2s ease-in;
+  flex-wrap: wrap;
 }
 
-.social .intro .name:hover > .photo{
-    transform: translateX(50vw) rotate(360deg);
-    transition: transform 3s ease-in-out;    
+.homepage .name:hover {
+  -webkit-text-stroke: 1px;
+  cursor: pointer;
+  -webkit-text-stroke-color: skyblue;
+  stroke-width: 1px;
 }
-.social .intro .name:hover::after .page:hover > .homepage .photo{
-    transform: translateX(50vw) rotate(360deg);
-    transition: transform 3s ease-in-out;    
-}
- 
 
-.homepage .social{
-    margin-top: 6rem;
-    font-size: large;
-    width: 70vw;
-    height: 15vh;
-    font-size: x-large;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
+.social .intro .name:hover > .photodiv .photo {
+  transform: translateX(50vw) rotate(360deg);
+  transition: transform 3s ease-in-out;
 }
-.homepage .photo{
-    position: fixed;
-    right: 15%;
-    top: 30%;
-    height: 8rem;
-    width: 8rem;
-    border: solid 1px;
-    
 
+.homepage .social {
+  margin-top: 6rem;
+  font-size: large;
+  width: 70vw;
+  height: 15vh;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--tertiary)
+}
+
+.homepage .photo1 {
+  display: flex;
+  position: fixed;
+  right: 15%;
+  top: 30%;
+  height: 8rem;
+  width: 8rem;
+  border: solid 1px;
+}
+.homepage .photo2
+{
+
+  right: 15%;
+  top: 30%;
+  height: 8rem;
+  width: 8rem;
+  border: solid 1px;
+  display: none;
 }
 .social section {
+  display: flex;
+  align-items: center baseline;
+  gap: 9px;
+  justify-content: center;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  font-size: 33px;
+}
+
+.social img {
+  height: 32px;
+  width: 32px;
+  background-color: aliceblue;
+  border-radius: 50%;
+
+  filter: grayscale(0%);
+  filter: brightness(100%);
+}
+
+.social img:hover {
+  filter: grayscale(100%);
+  filter: brightness(70%);
+}
+
+.image {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+
+}
+
+.social .intro {
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--tertiary);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.span {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    animation: move 5s linear infinite;
+    transition: all linear;
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(var(--randomX , 0px), var(--randomY , 0px));
+    }
+}
+
+@media only screen and (max-width:600px) {
+  .social .intro{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+
+  }
+  .social{
+    position: absolute;
+    top: 3%;
+  }
+  .homepage{
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
-
-}
-.social img{
-    height: 40px;
-    width: 40px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    border: solid blue;
-    filter: grayscale(0%);
-    filter: brightness(100%);
-}
-.social img:hover{
-    filter: grayscale(100%);
-    filter: brightness(70%);
-}
-.image{
+  }
+  .social .name{
+    font-size:25px;   
+  }
+  .photodiv .photo1{
+    display: none;
+  }
+  .photodiv .photo2{
     display: flex;
-    gap: 18px;
+  }
+  .photodiv {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:30px ;
+    position: absolute;
+    z-index: 2;
+    height: 160px;
+    top: 70px ;
+    padding: 30px;
+  }
+  .homepage section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    position: relative;
+    top: 40%;
 
 }
-.social .intro{
-    font-size: 20px;
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    display: flex;
-    justify-content: center;
 }

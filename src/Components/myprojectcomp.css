@@ -3,7 +3,7 @@
     display: flex;
     font-size: small;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: var(--blue);
     gap: 30px;
     flex-wrap: wrap;
 
@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #8576FF !important;
+    background-color: #ff28db;
     border-radius: 10px;
     border:none;
    
@@ -95,3 +95,10 @@ footer a:hover {
 
     color: aquamarine;
 }
+@media only screen and (max-width:600) {
+    .homepage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }

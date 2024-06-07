@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <p className="name">PORTFOLIO</p>
+        <header><p className="name">SREYAS B ANAND</p></header>
         <section>
         <Link to='/'>HOME</Link>
         <Link to='/Aboutme'>ABOUT</Link>

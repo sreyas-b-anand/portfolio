@@ -1,6 +1,6 @@
 import Myprojectcomp from "../Components/Myprojectcomponent";
 import Navbar from "../Components/Navbar";
-
+import './MyProjects.css'
 
 function Myproject() {
   const calculator = {
