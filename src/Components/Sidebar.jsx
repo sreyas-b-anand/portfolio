@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { useNavigate } from "react-router-dom";
-import arrow from '../assets/arrow.png';
+import arrow from '../assets/arrow.jpg';
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -15,13 +15,16 @@ function Sidebar() {
       sidebar.style.display = "flex";
       button.style.right = "60vw";
       image.style.transform = "rotate(180deg)";
+      name.style.opacity = "0.5";
       
     } else {
       setTimeout(() => {
         sidebar.style.display = "none";
+        name.style.opacity = "1";
       }, 300);
       button.style.right = "0";
       image.style.transform = "rotate(360deg)";
+      
     }
   };
   

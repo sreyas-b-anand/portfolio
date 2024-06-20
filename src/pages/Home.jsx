@@ -1,7 +1,8 @@
 import Navbar from "../Components/Navbar";
-import git from "../assets/git.png";
-import mail from "../assets/mail.png";
-import linkedIn from "../assets/linkedIn.png";
+import git from "../assets/git.jpg";
+import mail from "../assets/mail.jpg";
+import linkedIn from "../assets/linkedIn.jpg";
+import photo from "../assets/photo.jpg";
 import "./Home.css";
 
 
@@ -21,12 +22,12 @@ function Home() {
               <div className="photodiv">
                 <img
                   alt="image"
-                  src=""
+                  src={photo}
                   className="photo1"
                 />
                 <img
                   alt="image"
-                  src=""
+                  src={photo}
                   className="photo2"
                 />
               </div>
@@ -38,11 +39,11 @@ function Home() {
             WELCOME TO MY PORTFOLIO <p className="website">WEBSITE</p>
           </section>
           <div className="image">
-            <a href="https://github.com/SREYAS1045">
-              <img className="linkimg" src={git} />
+            <a href="https://github.com/sreyas-b-anand">
+              <img className="linkimg" id="img" src={git} />
             </a>
             <a href="https://www.linkedin.com/in/sreyas-b-anand-8113a8298">
-              <img className="linkimg" src={linkedIn} />
+              <img className="linkimg"id="img" src={linkedIn} />
             </a>
             <a href="mailto:sreyas1045@gmail.com">
               <img className="linkimg" src={mail}/>

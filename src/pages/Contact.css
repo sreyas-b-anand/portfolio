@@ -33,10 +33,10 @@ textarea{
     height: 40px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-color: rgb(1, 1, 129);
+    background-color: black;
 }
 .contact .btn:hover{
-    box-shadow: 1px  1px 7px 5px rgb(1, 1, 129);
+    box-shadow: 1px  1px 7px 5px #0004ff;;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
@@ -48,16 +48,12 @@ textarea{
 
 
 .contactpage img{
-    width: 35px;
-    height: 35px;
-    object-fit:cover;
-    border-radius: 10px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    mix-blend-mode:normal;
-    aspect-ratio: 3/2;
-    
+    border-radius: 10px;
    
 }
 .contactpage img:hover{
@@ -66,7 +62,7 @@ textarea{
     transform: translateZ(10px);
     transition: all 0.2s linear;
     z-index: 5;
-    opacity: 0.5;
+    
 }
 @media only screen and (max-height:560px) {
     .c {

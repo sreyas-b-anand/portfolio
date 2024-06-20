@@ -6,9 +6,9 @@
   font-size: 35px;
   font-weight: 500;
   font-style: normal;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  transition: all 2s ease-in;
+  transition: all 0.5s ease-in;
   flex-wrap: wrap;
 }
 
@@ -25,7 +25,7 @@
   width: 70vw;
   height: 15vh;
   font-size: x-large;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: var(--tertiary);
 }
 
@@ -71,7 +71,7 @@
 .linkimg {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  mix-blend-mode: lighten;
   object-fit: cover;
 }
 .linkimg:hover {
@@ -82,13 +82,16 @@
   mix-blend-mode: lighten;
   filter: brightness(100%);
 }
+#img{
+  border-radius: 50%;
+}
 
 .social .intro {
   font-size: 25px;
   display: flex;
   align-items: baseline;
   gap: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: var(--tertiary);
   flex-wrap: wrap;
   justify-content: center;
@@ -149,7 +152,7 @@
     align-items: center;
     justify-content: center;
     border: solid 1px blue;
-padding-top: 13px;
+
     z-index: -1;
     top: 0;
     height: 8rem;
