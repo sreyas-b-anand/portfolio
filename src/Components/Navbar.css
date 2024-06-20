@@ -6,17 +6,18 @@
     --tertiary:#FFFFFE;
     color:var(--tertiary);
     display: flex;
+    align-items: end;
     padding-bottom: 1rem;
+    z-index: 4;
+    justify-content: end;
+   
 
 }
-.navbar a{
+.navbar .link{
     text-decoration: none;
     color: var(--blue);
 }
-.navbar header{
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
+
 .navbar section{
     
     font-weight: 600;
@@ -28,32 +29,35 @@
     text-decoration: none;  
     padding-bottom: 5px;
     
+
+    
 }
 .navbar p{
     font-weight:  bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:30px;
     margin-left: 2rem;
-}
-.navbar .name{
-    margin-left: 20px;
     padding-bottom: 10px;
 }
-.navbar a:hover{
+
+.navbar .link:hover{
     cursor: pointer;
     border-bottom: solid var(--tertiary);
-   
-    
+
 }
+
+
 @media only screen and (max-width:660px)
 {
-    .navbar{
-        overflow: hidden;
+    .navbar .link{
+        display: none;
+        
     }
     .navbar .name{
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 25px;
+
     }
 }
-    

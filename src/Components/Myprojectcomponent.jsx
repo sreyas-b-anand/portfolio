@@ -24,7 +24,7 @@ function Myprojectcomp(props) {
             <section>{tictactoe.desc}</section>
             <footer>
               <a href={tictactoe.gitlink}>GIT</a>
-              <a href={tictactoe.weblink}>WEB</a>
+              <a className="disabled" href={tictactoe.weblink}>WEB</a>
             </footer>
           </div>
         </div>

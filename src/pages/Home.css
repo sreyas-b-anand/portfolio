@@ -1,12 +1,5 @@
-.page {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--bgclr);
-  color: var(--tertiary);
-  z-index: -7;
-}
 .homepage {
-  z-index: 1;
+  z-index: -6;
 }
 
 .homepage .name {
@@ -26,11 +19,6 @@
   stroke-width: 1px;
 }
 
-.social .intro .name:hover > .photodiv .photo {
-  transform: translateX(50vw) rotate(360deg);
-  transition: transform 3s ease-in-out;
-}
-
 .homepage .social {
   margin-top: 6rem;
   font-size: large;
@@ -38,10 +26,10 @@
   height: 15vh;
   font-size: x-large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--tertiary)
+  color: var(--tertiary);
 }
 
-.homepage .photo1 {
+.homepage .social .photo1 {
   display: flex;
   position: fixed;
   right: 15%;
@@ -49,15 +37,9 @@
   height: 8rem;
   width: 8rem;
   border: solid 1px;
+  border-radius: 10px;
 }
-.homepage .photo2
-{
-
-  right: 15%;
-  top: 30%;
-  height: 8rem;
-  width: 8rem;
-  border: solid 1px;
+.homepage .photo2 {
   display: none;
 }
 .social section {
@@ -70,19 +52,12 @@
   font-size: 33px;
 }
 
-.social img {
+.social .photo1 {
   height: 32px;
   width: 32px;
-  background-color: aliceblue;
-  border-radius: 50%;
-
+  
   filter: grayscale(0%);
   filter: brightness(100%);
-}
-
-.social img:hover {
-  filter: grayscale(100%);
-  filter: brightness(70%);
 }
 
 .image {
@@ -91,11 +66,25 @@
   align-items: center;
   justify-content: center;
   padding-top: 30px;
+}
 
+.linkimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.linkimg:hover {
+  height: 40px;
+  width: 40px;
+  transform: translateZ(10px);
+  transition: all 0.2s linear;
+  mix-blend-mode: lighten;
+  filter: brightness(100%);
 }
 
 .social .intro {
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   align-items: baseline;
   gap: 5px;
@@ -104,71 +93,75 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
-.span {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    position: absolute;
-    animation: move 5s linear infinite;
-    transition: all linear;
-    display: none;
+.sidebar a {
+  text-decoration: none;
 }
-
-@keyframes move {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(var(--randomX , 0px), var(--randomY , 0px));
-    }
-}
-
-@media only screen and (max-width:600px) {
-  .social .intro{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    
-
+@media only screen and (max-width: 790px) {
+  .homepage {
+    z-index: -7;
   }
-  .social{
+
+  .social .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social {
     position: absolute;
     top: 3%;
+    z-index: -1;
   }
-  .homepage{
+  .social .name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .homepage {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .social .name{
-    font-size:25px;   
-  }
-  .photodiv .photo1{
-    display: none;
-  }
-  .photodiv .photo2{
-    display: flex;
+    z-index: -1;
   }
   .photodiv {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    z-index: 2;
-    height: 160px;
-    top: 70px ;
-    padding: 30px;
+    height: 8rem;
+
   }
-  .homepage section{
+  .social .name {
+    font-size: 25px;
+  }
+  .photo1 {
+    display: none;
+    opacity: 0;
+  }
+  .photodiv .photo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .photodiv .photo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px blue;
+padding-top: 13px;
+    z-index: -1;
+    top: 0;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+  
+  }
+  .homepage section {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: medium;
-    position: relative;
-    top: 40%;
-
-}
+    padding-top: 0;
+  }
 }

@@ -1,6 +1,6 @@
 import Myprojectcomp from "../Components/Myprojectcomponent";
 import Navbar from "../Components/Navbar";
-import './MyProjects.css'
+import "./MyProjects.css";
 
 function Myproject() {
   const calculator = {
@@ -11,20 +11,18 @@ function Myproject() {
     id: 1,
   };
   const tictactoe = {
-    header : "TIC-TAC-TOE ",
-    desc : "I have created a tictactoe game , using C++ ,which runs on terminal",
-    gitlink : "https://github.com/SREYAS1045/tictactoeCpp",
-    weblink : "" ,
-    id : 2
-  }
-  
+    header: "TIC-TAC-TOE ",
+    desc: "I have created a tictactoe game , using C++ ,which runs on terminal",
+    gitlink: "https://github.com/SREYAS1045/tictactoeCpp",
+    weblink: "",
+    id: 2,
+  };
 
   return (
     <>
-      <div className="navbar">
-        <Navbar />
-      </div>
-        <Myprojectcomp tictactoe={tictactoe} calculator={calculator} />
+      <Navbar />
+
+      <Myprojectcomp tictactoe={tictactoe} calculator={calculator} />
     </>
   );
 }

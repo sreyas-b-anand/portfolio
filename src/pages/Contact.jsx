@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import "./Contact.css";
+import X from "../assets/X.png";
+import instagram from "../assets/instagram.png";
+import mail from "../assets/mail.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -8,13 +11,21 @@ function Contact() {
   const [message, setMessage] = useState("");
   /*const [isLoading , setIsloading] =useState(false);
   const [messageSent , setMessageSent] =useState(false)*/
+
+  const handleClick = (e) =>{
+    e.preventDefault();
+    setName("")
+    setMessage("")
+    setEmail("")
+  }
+
   return (
     <>
-      <div className="navbar">
+      
         <Navbar />
-      </div>
+      
       <div className="contactpage">
-        <form>
+        <form >
           <div className="contact">
             <label className="message">MESSAGE ME</label>
             <label className="nameIn">
@@ -41,11 +52,11 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </label>
-            <button className='btn' type="button">SEND</button>
+            <button className='btn' type="button" onClick={handleClick}>SEND</button>
             <div className="c">
-              <img src="" alt="ig" />
-              <img src="" alt="x" />
-              <img src="" alt="m" />
+              <a className="contimg" href="http://"><img src={instagram} alt="ig" /></a>
+              <a href="http://" className="contimg"><img src={X} alt="x" /></a>
+              <a href="http://" className="contimg"><img src={mail} alt="m" /></a>
             </div>
           </div>
         </form>

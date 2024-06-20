@@ -1,0 +1,27 @@
+.details {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.details h3 {
+  border-bottom: dashed;
+  border-color: aliceblue;
+  font-size: larger;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.details section {
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: medium;
+}
+@media only screen and (max-width:600px){
+  .details section{
+    font-size: 15px;
+    align-items: center;
+  }
+}

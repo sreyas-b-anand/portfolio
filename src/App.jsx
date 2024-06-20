@@ -6,6 +6,7 @@ import Myproject from './pages/Myproject';
 import Contact from './pages/Contact';
 
 
+
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/Aboutme' Component={Aboutme}/>
           <Route path='/Contact'  Component={Contact}/>
           <Route path='/MyProjects' Component={Myproject}/>
+          
         </Routes>
       </BrowserRouter>
     </>
