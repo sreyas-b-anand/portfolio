@@ -2,7 +2,6 @@ import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import "./Contact.css";
 import X from "../assets/X.jpg";
-import instagram from "../assets/instagram.jpg";
 import mail from "../assets/mail.jpg";
 
 function Contact() {
