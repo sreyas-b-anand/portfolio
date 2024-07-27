@@ -13,8 +13,8 @@ function Myprojectcomp(props) {
             <header>{calculator.header}</header>
             <section>{calculator.desc}</section>
             <footer>
-              <a href={calculator.gitlink}>GIT</a>{" "}
-              <a href={calculator.weblink}>WEB</a>
+              <a href={calculator.gitlink} target="_blank" rel="noopener noreferrer">GIT</a>{" "}
+              <a href={calculator.weblink} target="_blank" rel="noopener noreferrer">WEB</a>
             </footer>
           </div>
         </div>
@@ -24,8 +24,8 @@ function Myprojectcomp(props) {
             <header>{tictactoe.header}</header>
             <section>{tictactoe.desc}</section>
             <footer>
-              <a href={tictactoe.gitlink}>GIT</a>
-              <a className="disabled" href={tictactoe.weblink}>WEB</a>
+              <a href={tictactoe.gitlink} target="_blank" rel="noopener noreferrer">GIT</a>
+              <a className="disabled" href={tictactoe.weblink} target="_blank" rel="noopener noreferrer">WEB</a>
             </footer>
           </div>
         </div>
@@ -34,8 +34,8 @@ function Myprojectcomp(props) {
             <header>{bookFinder.header}</header>
             <section>{bookFinder.desc}</section>
             <footer>
-              <a href={bookFinder.gitlink}>GIT</a>
-              <a className="disabled" href={bookFinder.weblink}>WEB</a>
+              <a href={bookFinder.gitlink}  target="_blank" rel="noopener noreferrer">GIT</a>
+              <a className="disabled" href={bookFinder.weblink} target="_blank" rel="noopener noreferrer">WEB</a>
             </footer>
           </div>
         </div>
