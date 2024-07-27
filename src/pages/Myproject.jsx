@@ -4,10 +4,10 @@ import "./MyProjects.css";
 
 function Myproject() {
   const calculator = {
-    header: "CALCULATOR",
-    desc: "I have created a calculator website which performs basic arthmetic,trigonometric, and logarithmic operations(recommended for desktops and laptops)",
-    gitlink: "https://github.com/sreyas-b-anand/calculator12",
-    weblink: "https://sreyas-b-anand.github.io/calculator12/",
+    header: "GRAMMR",
+    desc: "I have created a simple grammar checking website using Gemini api",
+    gitlink: "https://github.com/sreyas-b-anand/grammr",
+    weblink: "https://grammr.vercel.app/",
     id: 1,
   };
   const tictactoe = {
@@ -17,12 +17,19 @@ function Myproject() {
     weblink: "",
     id: 2,
   };
+  const bookFinder = {
+    header: "BOOKLIB ",
+    desc: "I have created a simple book finder website using Google Books api",
+    gitlink: "https://github.com/sreyas-b-anand/book-finder",
+    weblink: "https://booklib-sreyas.vercel.app/",
+    id: 3,
+  }
 
   return (
     <>
       <Navbar />
 
-      <Myprojectcomp tictactoe={tictactoe} calculator={calculator} />
+      <Myprojectcomp tictactoe={tictactoe} calculator={calculator} bookFinder={bookFinder} />
     </>
   );
 }

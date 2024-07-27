@@ -3,6 +3,7 @@ import "./myprojectcomp.css";
 function Myprojectcomp(props) {
   const calculator = props.calculator;
   const tictactoe = props.tictactoe;
+  const bookFinder = props.bookFinder
 
   return (
     <>
@@ -25,6 +26,16 @@ function Myprojectcomp(props) {
             <footer>
               <a href={tictactoe.gitlink}>GIT</a>
               <a className="disabled" href={tictactoe.weblink}>WEB</a>
+            </footer>
+          </div>
+        </div>
+        <div className="project2">
+          <div key={bookFinder.id}>
+            <header>{bookFinder.header}</header>
+            <section>{bookFinder.desc}</section>
+            <footer>
+              <a href={bookFinder.gitlink}>GIT</a>
+              <a className="disabled" href={bookFinder.weblink}>WEB</a>
             </footer>
           </div>
         </div>

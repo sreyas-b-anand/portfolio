@@ -8,9 +8,7 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  /*const [isLoading , setIsloading] =useState(false);
-  const [messageSent , setMessageSent] =useState(false)*/
-
+  
   const handleClick = (e) =>{
     e.preventDefault();
     setName("")
